@@ -67,28 +67,22 @@ class CartaBaralho
 class MainClass
 {
 	public static void Main(){
-		int i = 0;
-		while(i != 1){
-			Console.WriteLine("Carta 1: ");
-			Console.WriteLine("__________________");
-			Console.WriteLine("Naipes: ");
-			Console.WriteLine("-> ouro");
-			Console.WriteLine("-> copas");
-			Console.WriteLine("-> espada");
-			Console.WriteLine("-> paus");
-			Console.WriteLine("__________________");
-			Console.Write("Digite um Naipes: ");
-			string naipe1 = Console.ReadLine();
-			if(naipe1 != ""){
-				Console.Write("Digite o valor da carta entre 1 e 13: ");
-				int valor1 = int.Parse(Console.ReadLine());
-				CartaBaralho carta1 = new CartaBaralho(valor1,naipe1);
-			}
-			
-	
-			
-		}
 		
+		Console.WriteLine("Carta 1: ");
+		Console.WriteLine("__________________");
+		Console.WriteLine("Naipes: ");
+		Console.WriteLine("-> ouro");
+		Console.WriteLine("-> copas");
+		Console.WriteLine("-> espada");
+		Console.WriteLine("-> paus");
+		Console.WriteLine("__________________");
+		Console.Write("Digite um Naipes: ");
+		string naipe1 = Console.ReadLine();
+		
+		Console.Write("Digite o valor da carta entre 1 e 13: ");
+		int valor1 = int.Parse(Console.ReadLine());
+
+		CartaBaralho carta1 = new CartaBaralho(valor1,naipe1);
 		
 		Console.WriteLine("Carta 2: ");
 		Console.WriteLine("__________________");
@@ -111,7 +105,5 @@ class MainClass
 		}else{
 			Console.WriteLine("Cartas Diferentes ("+carta1+"/"+carta2+")");
 		}
-		
-		
 	}
 }
